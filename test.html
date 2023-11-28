@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="res" type="number">
+    <button onclick="add_digit(8)">8</button>
+
+    <button onclick="action()">+</button>
+
+
+
+
+
+
+
+
+
+    <script>
+        debugger
+        let temp1 = 0
+        let temp2 = 0
+        let clearFlag = false
+        oper = ""
+
+
+        function action() {
+            clearFlag = true
+        }
+
+        function add_digit(dig) {
+            if (clearFlag) {
+                res.value = ""
+                temp1 = 0
+                clearFlag = false
+            }
+            res.value += dig
+        }
+    </script>
+</body>
+
+</html>
